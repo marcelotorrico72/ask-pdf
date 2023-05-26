@@ -41,9 +41,12 @@ def check_password():
 if check_password():
 
 # def main():
-    load_dotenv()
+    # load_dotenv()
+
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask your PDF 💬")
+
+    # os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"]
     
     # upload file
     pdf = st.file_uploader("Upload your PDF", type="pdf")
